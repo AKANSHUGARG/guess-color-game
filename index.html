@@ -1,0 +1,67 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Guess the Color</title>  
+    <style>  
+        body {  
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
+            display: flex;  
+            flex-direction: column;  
+            align-items: center;  
+            justify-content: center;  
+            height: 100vh;  
+            background-color: #f4f4f9;  
+            margin: 0;  
+        }  
+
+        h1 {  
+            font-size: 2rem;  
+            margin: 20px 0;  
+            color: #333;  
+        }  
+
+        h4 {  
+            font-size: 1.2rem;  
+            color: #555;  
+        }  
+
+        #options-container {  
+            display: flex;  
+            flex-wrap: wrap;  
+            justify-content: center;  
+            margin-top: 20px;  
+        }  
+
+        #options-container > div {  
+            height: 60px;  
+            width: 60px;  
+            margin: 5px;  
+            border-radius: 10px;  
+            cursor: pointer;  
+            transition: transform 0.2s;  
+            border: 2px solid transparent; /* Cool hover effect */  
+        }  
+
+        #options-container > div:hover {  
+            transform: scale(1.1);  
+            border: 2px solid #333; /* Outline on hover */  
+        }  
+
+        #score {  
+            font-weight: bold;  
+        }  
+    </style>  
+</head>  
+<body>  
+    <div>  
+        <h1 id="color-code"></h1>  
+    </div>  
+    <div>  
+        <h4>Score: <span id="score">0</span></h4>  
+    </div>  
+    <div id="options-container"></div>  
+    <script src="script.js"></script>  
+</body>  
+</html>
